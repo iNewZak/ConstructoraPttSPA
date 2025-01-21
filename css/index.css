@@ -35,3 +35,26 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
 }
+
+.mision_vision {
+    height: 120px;
+    width: 120px;
+}
+
+.card {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card.visible {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out;
+}
