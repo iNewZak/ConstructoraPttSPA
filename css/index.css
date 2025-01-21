@@ -20,10 +20,21 @@
     color: black;
     padding: 60px;
     justify-content: center;
+    font-weight: bold;
+}
+
+.titulo1 {
+    color: black;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .color1 {
     background-color: #ECF0F1;
+}
+
+.color2 {
+    color: black;
 }
 
 .letra {
@@ -58,3 +69,63 @@
 .card img {
     transition: transform 0.3s ease-in-out;
 }
+
+.diagonal_text {
+    display: inline-block;
+    transform: rotate(-45deg);
+    margin-bottom: 60px;
+    color: #333;
+    font-weight: bold;
+}
+
+.diagonal_text2 {
+    position: absolute;
+    transform: rotate(45deg);
+    color: #333;
+    margin-bottom: 100px;
+    right: 10%;
+    font-weight: bold;
+}
+
+
+.diagonal_text3 {
+    transform: rotate(0deg);
+    color: #333;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    height: 98%;
+    width: 98%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+@media (max-width: 768px) {
+    .diagonal_text2 {
+        position: absolute;
+        transform: rotate(45deg);
+        color: #333;
+        margin-right: 70px;
+    }
+
+    .titulo {
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .letra {
+        font-size: 35px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .letra1 {
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+  }
+  
