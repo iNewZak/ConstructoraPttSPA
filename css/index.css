@@ -17,16 +17,9 @@
 }
 
 .titulo {
-    color: black;
-    padding: 60px;
-    justify-content: center;
-    font-weight: bold;
-}
-
-.titulo1 {
-    color: black;
-    font-size: 50px;
+    color: #333;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .color1 {
@@ -34,17 +27,15 @@
 }
 
 .color2 {
-    color: black;
+    color: #333;
 }
 
 .letra {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .letra1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 60px;
+    font-size: 90px;
 }
 
 .mision_vision {
@@ -71,29 +62,42 @@
 }
 
 .diagonal_text {
-    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
     transform: rotate(-45deg);
-    margin-bottom: 60px;
-    color: #333;
+    color: #585858;
     font-weight: bold;
+    margin-top: 60px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .diagonal_text2 {
+    font-family: 'Times New Roman', Times, serif;
     position: absolute;
     transform: rotate(45deg);
-    color: #333;
-    margin-bottom: 100px;
-    right: 10%;
+    color: #585858;
     font-weight: bold;
+    right: 10%;
+    margin-top: 60px;
+    transition: transform 0.3s ease-in-out;
 }
 
+.diagonal_text:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(45deg);
+}
+
+.diagonal_text2:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-45deg);
+}
 
 .diagonal_text3 {
-    transform: rotate(0deg);
+    font-family: 'Times New Roman', Times, serif;
     color: #333;
     font-weight: bold;
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 img {
@@ -103,12 +107,43 @@ img {
     max-width: 100px;
 }
 
+.padi {
+    margin-bottom: 20px;
+}
+
+.padi2 {
+    padding-bottom: 100px;
+}
+
+.padi3 {
+    padding: 200px;
+}
+
 @media (max-width: 768px) {
-    .diagonal_text2 {
-        position: absolute;
-        transform: rotate(45deg);
+
+    .diagonal_text {
+        font-family: 'Times New Roman', Times, serif;
+        position: static;
+        display: inline-block;
         color: #333;
-        margin-right: 70px;
+        font-weight: bold;
+        margin-top: 1px;
+    }
+
+    .diagonal_text2 {
+        font-family: 'Times New Roman', Times, serif;
+        position: static;
+        display: inline-block;
+        color: #333;
+        margin-top: 1px;
+    }
+
+    .diagonal_text:hover {
+        transform: rotate(0deg);
+    }
+
+    .diagonal_text2:hover {
+        transform: rotate(0deg);
     }
 
     .titulo {
@@ -122,10 +157,22 @@ img {
         font-size: 35px;
         font-family: 'Times New Roman', Times, serif;
     }
-    
+
     .letra1 {
         font-size: 50px;
         font-family: 'Times New Roman', Times, serif;
     }
-  }
-  
+
+    .padi2 {
+        padding-bottom: 50px;
+    }
+
+    .padi3 {
+        padding: 100px;
+    }
+
+    .subtitulo {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
