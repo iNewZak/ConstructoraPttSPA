@@ -7,10 +7,11 @@ h3 {
 }
 
 .imgcancha {
-    height: 350px;
-    width: 450px;
+    height: 250px;
+    width: 350px;
     transition: transform 0.3s ease-in-out;
     transform: scale(1.05);
+    padding: 25px;
 }
 
 .imgmaquinadep {
@@ -18,6 +19,7 @@ h3 {
     width: 250px;
     transition: transform 0.3s ease-in-out;
     transform: scale(1.05);
+    padding: 25px;
 }
 
 .d-none {
