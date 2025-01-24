@@ -91,3 +91,12 @@ footer {
     backdrop-filter: blur(2px);
     color: white;
 }
+
+.inicio {
+    margin-top: 50px;
+}
+
+
+.final {
+    margin-bottom: 50px;
+}
