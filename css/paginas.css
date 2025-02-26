@@ -70,3 +70,7 @@ footer {
 a {
     text-decoration: none !important;
 }
+
+img {
+    border-radius: 8px !important;
+}
