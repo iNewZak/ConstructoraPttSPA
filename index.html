@@ -63,8 +63,8 @@
         <h4 class="text-center p-3">Tipos de multicanchas</h4>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <a href="/img/multicancha4.jpg" data-lightbox="galeria">
-                    <img src="/img/multicancha4.jpg" alt="Multicancha 1">
+                <a href="https://inewzak.github.io/ConstructoraPttSPA/img/multicancha4.jpg" data-lightbox="galeria">
+                    <img src="https://inewzak.github.io/ConstructoraPttSPA/img/multicancha4.jpg" alt="Multicancha 1">
                 </a>
                 <h6>*Dirección</h6>
             </div>
@@ -75,6 +75,10 @@
                 <h6>*Dirección</h6>
             </div>
         </div>
+    </div>
+
+    <div id="zoomed-image" style="display: none;" onclick="closeZoom(event)">
+        <img id="zoomed-img" src="" alt="Imagen ampliada">
     </div>
 
     <div class="container tiposmulticanchas p-5">
@@ -102,8 +106,7 @@
                 <h6>Constructoras</h6>
                 <ul>
                     <li>
-                        <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">Arena
-                            LTDA Limitada</a>
+                        <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">Arena LTDA Limitada</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraCorralonesSPA/">Corralones
@@ -202,6 +205,18 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+        function zoomImage(img) {
+            document.getElementById("zoomed-img").src = img.src;
+            document.getElementById("zoomed-image").style.display = "flex";
+        }
+    
+        function closeZoom(event) {
+            if (event.target === document.getElementById("zoomed-image")) {
+                document.getElementById("zoomed-image").style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
