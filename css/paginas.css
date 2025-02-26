@@ -7,7 +7,7 @@ body {
 header {
     background-color: #0074E4;
     color: #FFFFFF;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
     text-align: end;
     position: relative;
     z-index: 1;
@@ -15,7 +15,7 @@ header {
 
 footer {
     background-color: #0074E4;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
     color: #FFFFFF;
     margin-top: auto;
     padding: 10px 0;
