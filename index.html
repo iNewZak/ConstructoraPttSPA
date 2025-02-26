@@ -7,9 +7,9 @@
     <title>Inicio - Constructora PTT SPA</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/paginas.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="js/lightboc.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
@@ -60,19 +60,70 @@
     </div>
 
     <div class="container tiposmulticanchas p-5">
-        <h4 class="text-center p-3">Tipos de multicanchas</h4>
+        <h4 class="text-center p-3">Multicanchas</h4>
         <div class="row justify-content-center">
-            <div class="col-md-4">
-                <a href="https://inewzak.github.io/ConstructoraPttSPA/img/multicancha4.jpg" data-lightbox="galeria">
-                    <img src="https://inewzak.github.io/ConstructoraPttSPA/img/multicancha4.jpg" alt="Multicancha 1">
-                </a>
-                <h6>*Dirección</h6>
+            <div class="col-3 text-center">
+                <img src="/img/multicancha.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow"
+                    alt="Imagen 1">
             </div>
-            <div class="col-md-4">
-                <a href="/img/multicancha4.jpg" data-lightbox="galeria">
-                    <img src="/img/multicancha4.jpg" alt="Multicancha 2">
-                </a>
-                <h6>*Dirección</h6>
+            <div class="col-3 text-center">
+                <img src="/img/multicancha2.jpg" onclick="openModal();currentSlide(2)" class="img-fluid hover-shadow"
+                    alt="Imagen 2">
+            </div>
+            <div class="col-3 text-center">
+                <img src="/img/multicancha3.jpg" onclick="openModal();currentSlide(3)" class="img-fluid hover-shadow"
+                    alt="Imagen 3">
+            </div>
+            <div class="col-3 text-center">
+                <img src="/img/multicancha4.jpg" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow"
+                    alt="Imagen 4">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal p-5">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="/img/multicancha.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="/img/multicancha2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="/img/multicancha3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/img/multicancha4.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <img class="demo" src="/img/multicancha.jpg" onclick="currentSlide(1)" alt="Colina">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="demo" src="/img/multicancha2.jpg" onclick="currentSlide(2)" alt="Conchali">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="demo" src="/img/multicancha3.jpg" onclick="currentSlide(3)" alt="Renca">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="demo" src="/img/multicancha4.jpg" onclick="currentSlide(4)" alt="El bosque">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -81,21 +132,24 @@
         <img id="zoomed-img" src="" alt="Imagen ampliada">
     </div>
 
-    <div class="container tiposmulticanchas p-5">
+    <div class="container p-5 imgmulticanchas">
         <h4 class="text-center p-3">Proyectos realizados</h4>
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <img src="">
-                <h6>*Direccion</h6>
+                <img src="img/multicancha.jpg">
+                <h6 class="p-2">*Dirección</h6>
             </div>
             <div class="col-md-4">
-                <img src="">
-                <h6>*Direccion</h6>
+                <img src="img/multicancha2.jpg">
+                <h6 class="p-2">*Dirección</h6>
             </div>
             <div class="col-md-4">
-                <img src="">
-                <h6>*Direccion</h6>
+                <img src="img/multicancha3.jpg">
+                <h6 class="p-2">*Dirección</h6>
             </div>
+        </div>
+        <div class="text-end">
+            <a href="galeria.html" class="text-dark text-decoration-none">Ver más imagenes ></a>
         </div>
     </div>
 
@@ -106,7 +160,8 @@
                 <h6>Constructoras</h6>
                 <ul>
                     <li>
-                        <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">Arena LTDA Limitada</a>
+                        <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraArenaLtdaLimitada/">Arena
+                            LTDA Limitada</a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="https://inewzak.github.io/ConstructoraCorralonesSPA/">Corralones
@@ -152,69 +207,114 @@
 
     <footer>
         <div class="container p-5">
-            <div class="row justify-content-center">
-                <div class="col-md-3 col-12">
-                    <h5>Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="index.html" class="text-white">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="servicios.html" class="text-white">Servicios</a>
-                        </li>
-                        <li>
-                            <a href="nosotros.html" class="text-white">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html" class="text-white">Contacto</a>
-                        </li>
-                    </ul>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <img src="img/logo_test.png" alt="Logo">
                 </div>
-                <div class="col-md-2 col-12">
-
-                </div>
-                <div class="col-md-5 col-12">
-                    <h5>Contactos</h5>
-                    <ul class="list-unstyled" style="font-size: 15px;">
-                        <li>
-                            <a href="https://maps.app.goo.gl/i2DkwwE69YTUJibTA" target="_blank" class="text-white">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px; margin-left: 2px;"></i>
-                                Alba 2, parcela 14, Colina, Región Metropolitana
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+56977798555" class="text-white">
-                                <i class="fas fa-phone-alt" style="margin-right: 5px;"></i>
-                                +56 9 7779 8555
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:constructorarapelchile@gmail.com" class="text-white">
-                                <i class="fas fa-envelope" style="margin-right: 5px;"></i>
-                                constructorarapelchile@gmail.com
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-md-8 col-12" style="align-content: center;">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <h5>Enlaces</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="index.html" class="text-white">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="servicios.html" class="text-white">Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="nosotros.html" class="text-white">Nosotros</a>
+                                </li>
+                                <li>
+                                    <a href="contacto.html" class="text-white">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <h5>Fotografias</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="galeria.html" class="text-white">Galeria</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h5>Contactos</h5>
+                            <ul class="list-unstyled" style="font-size: 15px;">
+                                <li>
+                                    <a href="https://maps.app.goo.gl/i2DkwwE69YTUJibTA" target="_blank"
+                                        class="text-white">
+                                        <i class="fas fa-map-marker-alt"
+                                            style="margin-right: 10px; margin-left: 2px;"></i>
+                                        Alba 2, parcela 14, Colina, Región Metropolitana
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+56977798555" class="text-white">
+                                        <i class="fas fa-phone-alt" style="margin-right: 5px;"></i>
+                                        +56 9 7779 8555
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:constructorarapelchile@gmail.com" class="text-white">
+                                        <i class="fas fa-envelope" style="margin-right: 5px;"></i>
+                                        constructorarapelchile@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center" style="font-size: 11px;">
-            <p>
-                &copy; 2025 Diseñado por Constructora Rapel SPA.
-            </p>
+            <div class="text-center" style="font-size: 11px;">
+                <p>
+                    &copy; 2025 Diseñado por Constructora Rapel SPA.
+                </p>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script>
-        function zoomImage(img) {
-            document.getElementById("zoomed-img").src = img.src;
-            document.getElementById("zoomed-image").style.display = "flex";
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
-    
-        function closeZoom(event) {
-            if (event.target === document.getElementById("zoomed-image")) {
-                document.getElementById("zoomed-image").style.display = "none";
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        function closeZoom(event) {
+            event.target.style.display = "none";
         }
     </script>
 </body>
