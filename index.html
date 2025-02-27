@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/paginas.css">
     <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="js/lightboc.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -62,10 +61,88 @@
     <div class="p-5"></div>
 
     <div class="container p-5">
-        <h3>¿Que ofrecemos?</h3>
-        <p>En Constructora PTT SPA, diseñamos, construimos y mantenemos canchas deportivas de alta calidad, incluyendo
-            superficies, iluminación y equipamiento. Además, suministramos máquinas y equipos deportivos para un óptimo
-            rendimiento. Garantizamos soluciones eficientes y duraderas para el sector público.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-12 p-3 align-content-center">
+                <h3>¿Que ofrecemos?</h3>
+                <p>En Constructora PTT SPA, diseñamos, construimos y mantenemos canchas deportivas de alta calidad,
+                    incluyendo
+                    superficies, iluminación y equipamiento. Además, suministramos máquinas y equipos deportivos para un
+                    óptimo
+                    rendimiento. Garantizamos soluciones eficientes y duraderas para el sector público.</p>
+            </div>
+            <div class="col-md-7 col-12 p-3 comolohacemos">
+                <h3 class="text-center">¿Cómo lo hacemos?</h3>
+                <div>🔍 1. Evaluación y Diseño
+                    Analizamos las necesidades del proyecto y diseñamos la mejor solución para cada espacio deportivo.
+                </div>
+                <div>📅 2. Planificación y Preparación
+                    Coordinamos tiempos, materiales y logística para garantizar eficiencia en la ejecución.
+                </div>
+                <div>🏗️ 3. Construcción y Equipamiento
+                    Realizamos la instalación de superficies, iluminación y equipamiento con los más altos estándares de
+                    calidad.
+                </div>
+                <div>✅ 4. Inspección y Entrega
+                    Verificamos cada detalle para asegurar un resultado óptimo y entregamos el proyecto listo para su
+                    uso.
+                </div>
+                <div>🔧 5. Mantenimiento y Soporte
+                    Ofrecemos mantenimiento y asesoría para garantizar la durabilidad y el buen funcionamiento de las
+                    instalaciones.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-5 beneficios">
+        <h3 class="text-center p-4">Beneficios y Diferenciadores</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-9">
+                <strong>Calidad Garantizada</strong> – Usamos materiales de alto rendimiento y las mejores técnicas de
+                construcción para asegurar durabilidad y seguridad.
+            </div>
+            <div class="col-md-2 col-3">
+                <img src="/img/calidad.png">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-3">
+                <img src="/img/soluciones.png">
+            </div>
+            <div class="col-md-8 col-9">
+                <strong>Soluciones Integrales</strong> – Nos encargamos de todo el proceso: diseño, construcción,
+                mantenimiento y equipamiento deportivo.
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-9">
+                <strong>Innovación y Tecnología </strong> – Incorporamos herramientas y tecnologías avanzadas para
+                optimizar cada proyecto.
+            </div>
+            <div class="col-md-2 col-3">
+                <img src="/img/innovacióntecnología.png">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 col-3">
+                <img src="/img/cumplimientoeficiencia.png">
+            </div>
+            <div class="col-md-8 col-9">
+                <strong>Cumplimiento y Eficiencia</strong> – Respetamos los plazos y costos acordados, asegurando
+                entregas puntuales y sin sorpresas.
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-9">
+                <strong>Experiencia en el Sector Público</strong> – Contamos con un sólido historial de proyectos
+                exitosos en el ámbito público, adaptándonos a sus exigencias y normativas.
+            </div>
+            <div class="col-md-2 col-3">
+                <img src="/img/experiencia.png">
+            </div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <div class="container-fluid contactanos">
@@ -78,7 +155,7 @@
     </div>
 
     <div class="container tiposmulticanchas p-5">
-        <h4 class="text-center p-3">Proyectos realizados de multicanchas</h4>
+        <h4 class="text-center p-3">Proyectos realizados</h4>
         <div class="row justify-content-center">
             <div class="col-3 text-center">
                 <img src="/img/multicancha.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow"
@@ -153,6 +230,101 @@
         <img id="zoomed-img" src="" alt="Imagen ampliada">
     </div>
 
+    <div class="container p-5">
+        <h3>Preguntas Frecuentes</h3>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="row preguntas">
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example1"
+                                aria-expanded="false" aria-controls="Example1" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Qué servicios ofrece su empresa?
+                            </button>
+                            <div class="collapse" id="Example1">
+                                Nuestra empresa se especializa en la construcción y
+                                mantenimiento de obras viales, como pavimentación de carreteras, reparación de
+                                caminos, señalización vial, instalación de drenajes, y obras de infraestructura
+                                vial para proyectos públicos y privados.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example2"
+                                aria-expanded="false" aria-controls="Example2" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Qué tipo de materiales utilizan en sus proyectos?
+                            </button>
+                            <div class="collapse" id="Example2">
+                                Usamos materiales de alta calidad, como asfalto, concreto, y mezclas de pavimento
+                                especialmente diseñadas para garantizar durabilidad y seguridad. Todos los
+                                materiales cumplen con los estándares nacionales e internacionales para obras
+                                viales.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example3"
+                                aria-expanded="false" aria-controls="Example3" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Cuánto cuesta una obra vial?
+                            </button>
+                            <div class="collapse" id="Example3">
+                                El costo de una obra vial depende del tamaño, la ubicación y los materiales
+                                requeridos. Ofrecemos cotizaciones personalizadas basadas en una evaluación técnica
+                                previa. Si deseas más detalles, puedes contactarnos para obtener una cotización
+                                exacta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="row preguntas">
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example4"
+                                aria-expanded="false" aria-controls="Example4" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Cuánto tiempo toma completar una obra vial?
+                            </button>
+                            <div class="collapse" id="Example4">
+                                El tiempo de ejecución depende del tamaño y complejidad del proyecto. Proyectos
+                                pequeños pueden tomar de 2 a 4 semanas, mientras que proyectos más grandes, como
+                                la pavimentación de carreteras, pueden durar varios meses. Te proporcionaremos
+                                un cronograma detallado durante la evaluación.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example5"
+                                aria-expanded="false" aria-controls="Example5" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Realizan mantenimiento de carreteras?
+                            </button>
+                            <div class="collapse" id="Example5">
+                                Sí, ofrecemos servicios de mantenimiento preventivo y correctivo para carreteras,
+                                incluyendo la reparación de grietas, la repavimentación, la limpieza de drenajes y
+                                la mejora de la señalización vial. Podemos diseñar un plan de mantenimiento acorde a
+                                las necesidades de tu proyecto.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card p-2">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#Example6"
+                                aria-expanded="false" aria-controls="Example6" style="text-decoration: none;">
+                                <span>&#x276F;</span> ¿Dónde están ubicados?
+                            </button>
+                            <div class="collapse" id="Example6">
+                                Estamos ubicados en la parcela 14 en el Alba 2 en la comuna de colina, región
+                                metropolitana
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container pt-5">
         <h4 style="margin-left: 10%;" class="p-2">Nuestros aliados</h4>

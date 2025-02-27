@@ -7,17 +7,13 @@
     margin: 0;
 }
 
-.navbar {
-    border-bottom: 2px solid #ddd;
-}
-
 .tiposmulticanchas img {
     height: 175px;
     width: auto;
     border-radius: 8px;
 }
 
-.imgmulticanchas img{
+.imgmulticanchas img {
     height: 225px;
     width: 100%;
     border-radius: 8px;
@@ -41,4 +37,46 @@ footer li {
     opacity: 0.75;
 }
 
-@media (max-width: 768px) {}
+.beneficios .col-md-8,
+.col-md-2 {
+    padding: 10px;
+    align-content: center;
+}
+
+.beneficios .col-md-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficios img {
+    height: 100px;
+    width: 100px;
+}
+
+.comolohacemos div {
+    padding: 10px;
+}
+
+.preguntas .card {
+    background-color: #0074E4;
+    color: #ffffff;
+}
+
+.preguntas button {
+    text-align: start !important;
+    color: #FFC107;
+    font-weight: 700;
+}
+
+.preguntas button:hover {
+    text-align: start !important;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .beneficios img {
+        height: auto;
+        width: 100%;
+    }
+}

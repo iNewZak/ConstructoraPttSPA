@@ -1,0 +1,17 @@
+.imgnosotros {
+    height: 400px;
+    width: 100%;
+}
+
+h4 {
+    margin-left: 10%;
+}
+
+
+@media (max-width: 768px) {
+    .imgnosotros {
+    height: 150px;
+    width: 100%;
+}
+
+}
