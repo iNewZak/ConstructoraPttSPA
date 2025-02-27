@@ -74,6 +74,11 @@ footer li {
     color: #ffffff;
 }
 
+.logo {
+    height: auto;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
     .beneficios img {
         height: auto;
