@@ -86,3 +86,18 @@ strong {
     font-weight: 700 !important;
     font-family: 'Times New Roman', Times, serif !important;
 }
+
+.logofooter {
+    height: auto;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .logofooter {
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+}
