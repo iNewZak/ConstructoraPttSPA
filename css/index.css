@@ -13,12 +13,6 @@
     border-radius: 8px;
 }
 
-.imgmulticanchas img {
-    height: 225px;
-    width: 100%;
-    border-radius: 8px;
-}
-
 .nuestroservicios li {
     padding: 5px;
     margin-left: 5%;
@@ -79,6 +73,15 @@ footer li {
     width: 100%;
 }
 
+.logofooter {
+    height: auto;
+    width: 100%;
+}
+
+.padi5 {
+    padding: 50px;
+}
+
 @media (max-width: 768px) {
     .beneficios img {
         height: auto;
@@ -88,5 +91,15 @@ footer li {
     .logo {
         height: 0px;
         width: 0px;
+    }
+
+    .logofooter {
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .padi5 {
+        padding: 0px;
     }
 }
