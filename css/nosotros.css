@@ -3,15 +3,22 @@
     width: 100%;
 }
 
-h4 {
+.infojefes li {
+    padding: 5px;
+}
+
+.derecha {
     margin-left: 10%;
 }
 
-
 @media (max-width: 768px) {
     .imgnosotros {
-    height: 150px;
-    width: 100%;
-}
+        height: 150px;
+        width: 100%;
+    }
 
+    .infojefes li {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
